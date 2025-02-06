@@ -175,7 +175,7 @@ if (num1 > num2) {
 //         #iBvqtjEm
 //     - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //         буде присвоювати змінній х значення "default"  якщо ви намагаєтесь присвоїти в неї falsy-значення (хибноподібні, тобто ті, які приводиться до false, а це 0 null undefined і тд).
-let x1 =0;
+let x1 = 0;
 x1 = x1 || "default";
 console.log(x1);
 //     #awLXL6TBzg
@@ -190,4 +190,15 @@ let coursesAndDurationArray = [
 ];
 if (coursesAndDurationArray[0].monthDuration > 5) {
     console.log('Cупер');
+} else if (coursesAndDurationArray[1].monthDuration > 5) {
+    console.log('Cупер');
+} else if (coursesAndDurationArray[2].monthDuration > 5) {
+    console.log('Cупер');
+}else if (coursesAndDurationArray[3].monthDuration > 5){
+    console.log('Cупер');
+}else if (coursesAndDurationArray[4].monthDuration > 5){
+    console.log('Cупер');
+}else if (coursesAndDurationArray[5].monthDuration > 5){
+    console.log('Cупер');
 }
+
