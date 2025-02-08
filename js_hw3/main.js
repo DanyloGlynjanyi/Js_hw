@@ -149,6 +149,5 @@ for (const user of users) {
 </div>
 <hr>
 `)
-
     }
 }
