@@ -3,8 +3,9 @@
 document.write(`<h1>Some Text Through "for"</h1>`)
 
 for (let i = 0; i < 10; i++) {
-    document.write(`<div>Some text</div>`)
+    console.log(document.write(`<div>Some text</div>`));
     document.write(`<hr>`)
+
 }
 // #TYj7ncx
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
@@ -23,14 +24,13 @@ let x = 0
 while (x < 20) {
     document.write(`<div>some Text</div>`)
     document.write(`<hr>`)
-
     x++
 }
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 document.write(`<h1>Some Text Through "While" With Index </h1>`)
 let i = 0
 while (i < 20) {
-    document.write(`<div>some Text №${i+1}</div>`)
+    document.write(`<div>some Text №${i + 1}</div>`)
     document.write(`<hr>`)
 
     i++
@@ -39,11 +39,10 @@ while (i < 20) {
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
 // Масив:
-//
-let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-//
 // ШАБЛОН:
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
+let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+
 document.write(`<h1>Displaying a List From an Array by Template</h1>`)
 
 for (const listOfItem of listOfItems) {
@@ -51,7 +50,6 @@ for (const listOfItem of listOfItems) {
     document.write(`<li>${listOfItem}</li>`)
     document.write(`</ul>`)
 }
-
 //
 // -----------------------------------------------
 //     #Hdjws7E
@@ -118,9 +116,9 @@ let users = [
 //     - користувачів зі статусом true
 document.write(`<h1>User Status - True</h1>`)
 for (const user of users) {
-    if (user.status === true) {
+    if (user.status) {
         document.write(`<div>`)
-        document.write(`<h2>Name: ${user.name}  age:${user.age}  Status: ${user.status} </h2>`)
+        document.write(`<h2>Name:${user.name}    age:${user.age}    Status: ${user.status} </h2>`)
         document.write(`</div>`)
         document.write(`<hr>`)
     }
@@ -128,9 +126,9 @@ for (const user of users) {
 // - користувачів зі статусом false
 document.write(`<h1>User Status - False</h1>`)
 for (const user of users) {
-    if (user.status !== true) {
+    if (!user.status) {
         document.write(`<div>`)
-        document.write(`<h2>Name: ${user.name}  age:${user.age}  Status: ${user.status} </h2>`)
+        document.write(`<h2>Name: ${user.name}    age:${user.age}    Status: ${user.status} </h2>`)
         document.write(`</div>`)
         document.write(`<hr>`)
     }
@@ -140,9 +138,8 @@ document.write(`<h1>User Age : 30+</h1>`)
 for (const user of users) {
     if (user.age > 30) {
         document.write(`<div>`)
-        document.write(`<h2>Name: ${user.name}  age:${user.age}  Status: ${user.status} </h2>`)
+        document.write(`<h2>Name: ${user.name}    age:${user.age}    Status: ${user.status} </h2>`)
         document.write(`</div>`)
         document.write(`<hr>`)
     }
 }
-
