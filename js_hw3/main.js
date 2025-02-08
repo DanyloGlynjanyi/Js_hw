@@ -3,7 +3,7 @@
 document.write(`<h1>Some Text Through "for"</h1>`)
 
 for (let i = 0; i < 10; i++) {
-    console.log(document.write(`<div>Some text</div>`));
+    document.write(`<div>Some text</div>`)
     document.write(`<hr>`)
 
 }
@@ -118,7 +118,9 @@ document.write(`<h1>User Status - True</h1>`)
 for (const user of users) {
     if (user.status) {
         document.write(`<div>`)
-        document.write(`<h2>Name:${user.name}    age:${user.age}    Status: ${user.status} </h2>`)
+        document.write(`<h2 class="user_text">Name: ${user.name}  </h2>`)
+        document.write(`<h2 class="user_text"> Age:${user.age}  </h2>`)
+        document.write(`<h2 class="user_text">Status: ${user.status}  </h2>`)
         document.write(`</div>`)
         document.write(`<hr>`)
     }
@@ -128,7 +130,12 @@ document.write(`<h1>User Status - False</h1>`)
 for (const user of users) {
     if (!user.status) {
         document.write(`<div>`)
-        document.write(`<h2>Name: ${user.name}    age:${user.age}    Status: ${user.status} </h2>`)
+        document.write(`<h2 class="user_text">Name: ${user.name}  </h2>`)
+        document.write(`<h2 class="user_text"> Age:${user.age}  </h2>`)
+        document.write(`<h2 class="user_text">Status: ${user.status}  </h2>`)
+
+
+
         document.write(`</div>`)
         document.write(`<hr>`)
     }
@@ -138,7 +145,9 @@ document.write(`<h1>User Age : 30+</h1>`)
 for (const user of users) {
     if (user.age > 30) {
         document.write(`<div>`)
-        document.write(`<h2>Name: ${user.name}    age:${user.age}    Status: ${user.status} </h2>`)
+        document.write(`<h2 class="user_text">Name: ${user.name}  </h2>`)
+        document.write(`<h2 class="user_text"> Age:${user.age}  </h2>`)
+        document.write(`<h2 class="user_text">Status: ${user.status}  </h2>`)
         document.write(`</div>`)
         document.write(`<hr>`)
     }
