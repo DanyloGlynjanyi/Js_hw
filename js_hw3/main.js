@@ -21,7 +21,7 @@ document.write(`<h1>Some Text Through "While" </h1>`)
 
 let x = 0
 while (x < 20) {
-    document.write(`<div>some Text</div> <hr>`)
+    document.write(`<h1>some Text</h1> <hr>`)
     x++
 }
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
@@ -31,26 +31,38 @@ while (i < 20) {
     document.write(`<div>some Text №${i + 1}</div>
 <hr>`)
 
-
     i++
 }
-//     #vLSZKMlO
+// #vLSZKMlO
 // - Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону
 // Масив:
+//
+//
 // ШАБЛОН:
-// замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
-let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+//     <ul>
+//         <li>ITEM OF ARRAY</li>
+//         <!--
+//             і тд інші об'єкти масиву
+//              ...
+//              ...
+//              ...
+//         -->
+//     </ul>
+//
+// замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву;
 
 document.write(`<h1>Displaying a List From an Array by Template</h1>`)
 
-
+    let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+document.write(`<ul class="ul_item">
+<li>ITEM OF ARRAY</li>`)
 for (const listOfItem of listOfItems) {
-    document.write(`<ul>
-          <li>${listOfItem}</li>
-           </ul>`)
-
+    document.write(`<ul class="ul_item" >
+ <li>${listOfItem}</li>
+</ul>`)
 }
+document.write(`</ul>`)
 //
 // -----------------------------------------------
 //     #Hdjws7E
@@ -130,7 +142,6 @@ document.write(`<h1>User Status - False</h1>`)
 for (const user of users) {
     if (!user.status) {
         document.write(`<div>
-
 <h2 class="user_text">Name: ${user.name}  </h2>
 <h2 class="user_text"> Age:${user.age}  </h2>
 <h2 class="user_text">Status: ${user.status}  </h2>
@@ -149,6 +160,5 @@ for (const user of users) {
 </div>
 <hr>
 `)
-
     }
 }

@@ -63,3 +63,11 @@ h1 {
     color: aqua;
     font-weight: bold;
 }
+.ul_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
