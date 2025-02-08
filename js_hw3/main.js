@@ -12,8 +12,7 @@ for (let i = 0; i < 10; i++) {
 document.write(`<h1>Some Text Through "for" With Index</h1>`)
 
 for (let i = 0; i < 10; i++) {
-    document.write(`<div>Text Some №${i + 1}</div>`)
-    document.write(`<hr>`)
+    document.write(`<div>Text Some №${i + 1}</div> <hr>`)
 }
 // #uzkt71dp
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
@@ -22,16 +21,16 @@ document.write(`<h1>Some Text Through "While" </h1>`)
 
 let x = 0
 while (x < 20) {
-    document.write(`<div>some Text</div>`)
-    document.write(`<hr>`)
+    document.write(`<div>some Text</div> <hr>`)
     x++
 }
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 document.write(`<h1>Some Text Through "While" With Index </h1>`)
 let i = 0
 while (i < 20) {
-    document.write(`<div>some Text №${i + 1}</div>`)
-    document.write(`<hr>`)
+    document.write(`<div>some Text №${i + 1}</div>
+<hr>`)
+
 
     i++
 }
@@ -45,10 +44,12 @@ let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'an
 
 document.write(`<h1>Displaying a List From an Array by Template</h1>`)
 
+
 for (const listOfItem of listOfItems) {
-    document.write(`<ul>`)
-    document.write(`<li>${listOfItem}</li>`)
-    document.write(`</ul>`)
+    document.write(`<ul>
+          <li>${listOfItem}</li>
+           </ul>`)
+
 }
 //
 // -----------------------------------------------
@@ -89,11 +90,10 @@ let products = [
 document.write(`<h1>Displaying a Product List From an Array by Template</h1>`)
 
 for (const product of products) {
-    document.write(`<div class="product-card" >`)
-    document.write(`<h3 class="product-title">TITLE: ${product.title}. Price - ${product.price}</h3>`)
-    document.write(`<img src="${product.image}" alt="product" class="product-image ">`)
-    document.write(`</div>`)
-
+    document.write(`<div class="product-card" >
+<h3 class="product-title">TITLE: ${product.title}. Price - ${product.price}</h3>
+<img src="${product.image}" alt="${product.image}" class="product-image ">
+</div>`)
 }
 // --------------------
 // #4WrHwFTEop0
@@ -117,38 +117,38 @@ let users = [
 document.write(`<h1>User Status - True</h1>`)
 for (const user of users) {
     if (user.status) {
-        document.write(`<div>`)
-        document.write(`<h2 class="user_text">Name: ${user.name}  </h2>`)
-        document.write(`<h2 class="user_text"> Age:${user.age}  </h2>`)
-        document.write(`<h2 class="user_text">Status: ${user.status}  </h2>`)
-        document.write(`</div>`)
-        document.write(`<hr>`)
+        document.write(`<div>
+<h2 class="user_text">Name: ${user.name}  </h2>
+<h2 class="user_text"> Age:${user.age}  </h2>
+<h2 class="user_text">Status: ${user.status}  </h2>
+</div>
+<hr>`)
     }
 }
 // - користувачів зі статусом false
 document.write(`<h1>User Status - False</h1>`)
 for (const user of users) {
     if (!user.status) {
-        document.write(`<div>`)
-        document.write(`<h2 class="user_text">Name: ${user.name}  </h2>`)
-        document.write(`<h2 class="user_text"> Age:${user.age}  </h2>`)
-        document.write(`<h2 class="user_text">Status: ${user.status}  </h2>`)
+        document.write(`<div>
 
-
-
-        document.write(`</div>`)
-        document.write(`<hr>`)
+<h2 class="user_text">Name: ${user.name}  </h2>
+<h2 class="user_text"> Age:${user.age}  </h2>
+<h2 class="user_text">Status: ${user.status}  </h2>
+</div>
+<hr>`)
     }
 }
 // - користувачів які старші за 30 років
 document.write(`<h1>User Age : 30+</h1>`)
 for (const user of users) {
     if (user.age > 30) {
-        document.write(`<div>`)
-        document.write(`<h2 class="user_text">Name: ${user.name}  </h2>`)
-        document.write(`<h2 class="user_text"> Age:${user.age}  </h2>`)
-        document.write(`<h2 class="user_text">Status: ${user.status}  </h2>`)
-        document.write(`</div>`)
-        document.write(`<hr>`)
+        document.write(`<div>
+<h2 class="user_text">Name: ${user.name}  </h2>
+<h2 class="user_text"> Age:${user.age}  </h2>
+<h2 class="user_text">Status: ${user.status}  </h2>
+</div>
+<hr>
+`)
+
     }
 }
