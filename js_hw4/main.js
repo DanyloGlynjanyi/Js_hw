@@ -136,7 +136,7 @@ function sum(arr) {
 console.log(sum(arrNum));
 // - створити функцію swap(arr,index1,index2). Функція міняє місцями заняення у відповідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
-console.log(swap([11, 22, 33, 44], 0, 1));
+swap([11, 22, 33, 44], 0, 1)
 //
 // function swap(arr, index1, index2) {
 //     const first = arr[index1];
@@ -149,7 +149,7 @@ function swap(arr, index1, index2){
     return [arr[index1], arr[index2]] = [arr[index2], arr[index1]] ,arr
 }
 
-swap([11, 22, 33, 44], 0, 1);
+console.log(swap([11, 22, 33, 44], 0, 1));
 
 
 // #mkGDenYnNjn
@@ -160,7 +160,7 @@ swap([11, 22, 33, 44], 0, 1);
 function exchange(sumUAH, currencyValues, exchangeCurrency) {
     for (const item of currencyValues) {
     sum1 = sumUAH
-        if (exchangeCurrency === `${item.currency}`) {
+        if (exchangeCurrency === item.currency) {
             res= sum1 / `${item.value}`
             console.log(`${item.currency}:${res}`)
         }
