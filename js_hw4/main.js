@@ -160,7 +160,7 @@ swap([11, 22, 33, 44], 0, 1);
 function exchange(sumUAH, currencyValues, exchangeCurrency) {
     for (const item of currencyValues) {
         sum1 = sumUAH
-        if (exchangeCurrency === `${item.currency}`) {
+        if (exchangeCurrency === item.currency) {
             res= sum1 / `${item.value}`
             console.log(`${item.currency}:${res}`)
         }
